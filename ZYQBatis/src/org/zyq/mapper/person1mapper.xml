@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?> <!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zyq.mapper.person1Mapper">
+	<select id="selectPerson1ByNumber"
+		resultType="Person1" parameterType="int">
+		select * from person1 where number= #{number}
+	</select>
+	<update id="updatePerson1ByNumber" parameterType="Person1">
+	update person1 set `name`=#{name},age=#{age} where number=#{number};
+	</update>
+	
+	
+</mapper>
