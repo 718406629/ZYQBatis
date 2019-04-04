@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
-
+//自定义转换器
 public class BooleanAndIntConverter extends BaseTypeHandler<Boolean> {
 
 	@Override
