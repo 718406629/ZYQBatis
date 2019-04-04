@@ -4,6 +4,13 @@ public class Person1 {
  private int number;
  private String name;
  private int age;
+ private boolean sex;
+public boolean isSex() {
+	return sex;
+}
+public void setSex(boolean sex) {
+	this.sex = sex;
+}
 public int getNumber() {
 	return number;
 }
@@ -22,11 +29,12 @@ public int getAge() {
 public void setAge(int age) {
 	this.age = age;
 }
-public Person1(int number, String name, int age) {
+public Person1(int number, String name, int age,boolean sex) {
 	
 	this.number = number;
 	this.name = name;
 	this.age = age;
+	this.sex=sex;
 }
 public Person1() {
 	
@@ -34,7 +42,7 @@ public Person1() {
 	@Override
 		public String toString() {
 			
-			return this.number+"-"+this.name+"-"+this.age;
+			return this.number+"-"+this.name+"-"+this.age+"-性别:"+this.sex;
 		}
 	
 }

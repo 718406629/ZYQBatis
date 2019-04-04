@@ -6,6 +6,13 @@
 <!--批量定义别名，别名就是在该包下的类名  -->
  <package name="org.zyq.entity"/>
 </typeAliases>
+
+<!--在别名标签后 配置转换器 -->
+<typeHandlers>
+    <typeHandler handler="org.zyq.converter.BooleanAndIntConverter" javaType="Boolean" jdbcType="INTEGER"/>
+
+</typeHandlers>
+
 	<environments default="development">
 		<environment id="development">
 		
