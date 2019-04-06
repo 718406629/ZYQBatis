@@ -36,6 +36,11 @@ public Person1(int number, String name, int age,boolean sex) {
 	this.age = age;
 	this.sex=sex;
 }
+public Person1(int number, String name, int age) {
+	this.number = number;
+	this.name = name;
+	this.age = age;
+}
 public Person1() {
 	
 }

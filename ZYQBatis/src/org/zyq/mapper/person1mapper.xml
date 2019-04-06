@@ -28,5 +28,17 @@
 	<select id="selectAllPerson1WithConverter" resultMap="resultPerson1" >
 		select * from person1 
 	</select>
+	<!--根据名字或年龄查询-->  
+	<select id="queryPerson1NameOrAgeWithHashMap" parameterType="HashMap" resultMap="resultPerson1">
+	select number,`name`,age,sex from person1
+	where `name` like '%${name}%' or age=#{age}
+	
+	
+	</select>
+	
+	
+	
+	
+	
 	
 </mapper>
